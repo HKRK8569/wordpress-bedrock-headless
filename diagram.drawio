@@ -1,0 +1,161 @@
+<mxfile host="65bd71144e">
+    <diagram id="architecture" name="AWS 構成図">
+        <mxGraphModel dx="1521" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="980" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="cloud" parent="1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=14;fontStyle=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=36;spacingTop=5;fontColor=#232F3E;dashed=0;" value="AWS Cloud" vertex="1">
+                    <mxGeometry height="755" width="1330" x="235" y="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="vpc" parent="1" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=14;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=36;spacingTop=5;fontColor=#879196;dashed=0;" value="VPC　" vertex="1">
+                    <mxGeometry height="420" width="963" x="578" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="pub" parent="1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=14;fontStyle=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#7AA116;fillColor=#F2F6E8;verticalAlign=top;align=left;spacingLeft=36;spacingTop=5;fontColor=#248814;dashed=0;" value="Public subnets" vertex="1">
+                    <mxGeometry height="345" width="281" x="597" y="439" as="geometry"/>
+                </mxCell>
+                <mxCell id="app" parent="1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=14;fontStyle=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#00A4A6;fillColor=#E6F6F7;verticalAlign=top;align=left;spacingLeft=36;spacingTop=5;fontColor=#147EBA;dashed=0;" value="Private subnets　／　アプリ" vertex="1">
+                    <mxGeometry height="345" width="316" x="900" y="439" as="geometry"/>
+                </mxCell>
+                <mxCell id="db" parent="1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=14;fontStyle=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#00A4A6;fillColor=#E6F6F7;verticalAlign=top;align=left;spacingLeft=36;spacingTop=5;fontColor=#147EBA;dashed=0;" value="Private subnets　／　DB" vertex="1">
+                    <mxGeometry height="345" width="281" x="1238" y="439" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#576A79;fillColor=#F6F8FA;fontColor=#182E43;spacingLeft=57;" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;Amazon S3&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;記事画像の非公開バケット&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="68" width="253" x="278" y="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3-s3-icon" parent="s3" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;fillColor=#578318;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="13" as="geometry"/>
+                </mxCell>
+                <mxCell id="reader" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#215E9C;fillColor=#EEF5FD;fontColor=#182E43;spacingLeft=42;" value="&lt;b&gt;&lt;font style=&quot;font-size:19px&quot;&gt;閲覧者&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;www.example.com&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="84" width="178" x="28" y="272" as="geometry"/>
+                </mxCell>
+                <mxCell id="reader-users-icon" parent="reader" style="shape=mxgraph.aws4.users;fillColor=#34475A;strokeColor=none;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="28" width="28" x="8" y="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="public-cf" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#215E9C;fillColor=#EEF5FD;fontColor=#182E43;spacingLeft=57;" value="&lt;b&gt;&lt;font style=&quot;font-size:19px&quot;&gt;CloudFront&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;公開サイト用・静的配信&lt;br&gt;Functions で index.html 補完&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="94" width="253" x="278" y="267" as="geometry"/>
+                </mxCell>
+                <mxCell id="public-cf-cloudfront-icon" parent="public-cf" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudfront;fillColor=#7242B8;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="site-s3" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#215E9C;fillColor=#EEF5FD;fontColor=#182E43;spacingLeft=57;" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;Amazon S3&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;サイト用の非公開バケット&lt;br&gt;Astro の HTML・CSS・JS&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="94" width="238" x="619" y="267" as="geometry"/>
+                </mxCell>
+                <mxCell id="site-s3-icon" parent="site-s3" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;fillColor=#578318;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="build" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#167367;fillColor=#FFFFFF;fontColor=#182E43;spacingLeft=57;" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;CodeBuild ／ Astro SSG&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;ビルド時に WordPress API を取得&lt;br&gt;S3 同期後にキャッシュ無効化&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="94" width="272" x="922" y="472" as="geometry"/>
+                </mxCell>
+                <mxCell id="build-codebuild-icon" parent="build" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.codebuild;fillColor=#C925D1;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="pipeline" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#167367;fillColor=#FFFFFF;fontColor=#182E43;spacingLeft=57;" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;CodePipeline&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;Git から Astro ソースを取得&lt;br&gt;QUEUED で順次実行&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="94" width="272" x="922" y="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="pipeline-codepipeline-icon" parent="pipeline" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.codepipeline;fillColor=#C925D1;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="webhook" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#167367;fillColor=#FFFFFF;fontColor=#182E43;spacingLeft=57;" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;Lambda Function URL&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;IAM 認証の Webhook 受け口&lt;br&gt;CodePipeline を起動&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="94" width="260" x="1260" y="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="webhook-lambda-icon" parent="webhook" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;fillColor=#D86613;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="nat" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#576A79;fillColor=#FFFFFF;fontColor=#182E43;spacingLeft=57;" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;NAT Gateway&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;Webhook・npm への通信&lt;br&gt;IGW 経由&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="86" width="238" x="619" y="472" as="geometry"/>
+                </mxCell>
+                <mxCell id="nat-icon" parent="nat" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.nat_gateway;fillColor=#7945B7;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="admin" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#A35217;fillColor=#FFF5EC;fontColor=#182E43;spacingLeft=42;" value="&lt;b&gt;&lt;font style=&quot;font-size:19px&quot;&gt;編集者&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;cms.example.com&lt;br&gt;/wp/wp-admin/&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="84" width="178" x="28" y="651" as="geometry"/>
+                </mxCell>
+                <mxCell id="admin-users-icon" parent="admin" style="shape=mxgraph.aws4.users;fillColor=#34475A;strokeColor=none;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="28" width="28" x="8" y="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="admin-cf" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#A35217;fillColor=#FFF5EC;fontColor=#182E43;spacingLeft=57;" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;CloudFront ＋ WAF&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;管理ホスト全体で IP 判定&lt;br&gt;許可 CIDR 以外は 403&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="106" width="253" x="278" y="640" as="geometry"/>
+                </mxCell>
+                <mxCell id="admin-cf-cloudfront-icon" parent="admin-cf" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudfront;fillColor=#7242B8;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="admin-cf-waf-icon" parent="admin-cf" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.waf;fillColor=#BD245C;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="admin-rule" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=center;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#A35217;fillColor=#FFFFFF;fontColor=#182E43;" value="&lt;b&gt;&lt;font style=&quot;font-size:19px&quot;&gt;ALB　管理ルール&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;管理用の秘密ヘッダー&lt;br&gt;→ CMS ターゲットグループ&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="106" width="238" x="619" y="640" as="geometry"/>
+                </mxCell>
+                <mxCell id="wp" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#167367;fillColor=#FFFFFF;fontColor=#182E43;spacingLeft=57;" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;WordPress（Bedrock）&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;ECS on Fargate ／ 公開 IP なし&lt;br&gt;Composer で依存関係を管理&lt;br&gt;Web ルート web/・REST API&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="106" width="272" x="922" y="640" as="geometry"/>
+                </mxCell>
+                <mxCell id="wp-ecs-icon" parent="wp" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;fillColor=#D86613;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="wp-secrets" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;text;align=center;verticalAlign=middle;spacing=0;fontSize=13;fontColor=#576A79;connectable=0;" value="DB 認証情報は Secrets Manager から注入" vertex="1">
+                    <mxGeometry height="24" width="272" x="922" y="750" as="geometry"/>
+                </mxCell>
+                <mxCell id="aurora" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;rounded=1;arcSize=9;align=left;verticalAlign=middle;spacing=5;strokeWidth=2;strokeColor=#576A79;fillColor=#FFFFFF;fontColor=#182E43;spacingLeft=57;" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;Aurora MySQL&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:14px&quot;&gt;投稿・分類・ユーザー情報&lt;br&gt;WordPress から接続&lt;/font&gt;" vertex="1">
+                    <mxGeometry height="96" width="237" x="1260" y="645" as="geometry"/>
+                </mxCell>
+                <mxCell id="aurora-aurora-icon" parent="aurora" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.aurora;fillColor=#3949AA;strokeColor=#ffffff;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="42" width="42" x="10" y="27" as="geometry"/>
+                </mxCell>
+                <mxCell id="alb" parent="1" style="html=1;fontFamily=Helvetica;whiteSpace=wrap;text;align=left;verticalAlign=middle;spacing=0;fontSize=14;fontColor=#576A79;fontStyle=0;spacingLeft=54;" value="&lt;b&gt;CMS 用 HTTPS ALB&lt;/b&gt;&lt;br&gt;CloudFront の送信元のみ許可&lt;br&gt;ルール不一致は 403" vertex="1">
+                    <mxGeometry height="70" width="240" x="618" y="566" as="geometry"/>
+                </mxCell>
+                <mxCell id="alb-application_load_balancer-icon" parent="alb" style="shape=mxgraph.aws4.application_load_balancer;fillColor=#7945B7;strokeColor=none;aspect=fixed;gradientColor=none;connectable=0;" value="" vertex="1">
+                    <mxGeometry height="36" width="36" x="6" y="17" as="geometry"/>
+                </mxCell>
+                <mxCell id="reader-public-cf" edge="1" parent="1" source="reader" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#215E9C;fontSize=13;fontColor=#215E9C;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="public-cf" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="public-cf-site-s3" edge="1" parent="1" source="public-cf" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#215E9C;fontSize=13;fontColor=#215E9C;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="site-s3" value="OAC">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="public-cf-s3" edge="1" parent="1" source="public-cf" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#215E9C;fontSize=13;fontColor=#215E9C;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="s3" value="/media/*  ·  OAC">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="admin-admin-cf" edge="1" parent="1" source="admin" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#A35217;fontSize=13;fontColor=#A35217;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="admin-cf" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="admin-cf-admin-rule" edge="1" parent="1" source="admin-cf" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#A35217;fontSize=13;fontColor=#A35217;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="admin-rule" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="admin-rule-wp" edge="1" parent="1" source="admin-rule" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#A35217;fontSize=13;fontColor=#A35217;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="wp" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="wp-webhook" edge="1" parent="1" source="wp" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#167367;fontSize=13;fontColor=#167367;labelBackgroundColor=#ffffff;exitX=1;exitY=0.22;entryX=0.5;entryY=1;" target="webhook" value="公開・更新・非公開化・削除&lt;br&gt;mu-plugin が Webhook を送信（SigV4）&lt;br&gt;web/app/mu-plugins/">
+                    <mxGeometry relative="1" x="-0.45" as="geometry">
+                        <mxPoint x="110" as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="1227" y="663.32"/>
+                            <mxPoint x="1227" y="257"/>
+                            <mxPoint x="1390" y="257"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="webhook-pipeline" edge="1" parent="1" source="webhook" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#167367;fontSize=13;fontColor=#167367;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="pipeline" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="pipeline-build" edge="1" parent="1" source="pipeline" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#167367;fontSize=13;fontColor=#167367;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="build" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="build-wp" edge="1" parent="1" source="build" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#167367;fontSize=13;fontColor=#167367;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="wp" value="Cloud Map の内部 DNS&lt;br&gt;REST API で公開記事を取得">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="build-site-s3" edge="1" parent="1" source="build" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#167367;fontSize=13;fontColor=#167367;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="site-s3" value="生成した dist/ を同期">
+                    <mxGeometry relative="1" x="0.39" as="geometry">
+                        <mxPoint x="-80" as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="889" y="519"/>
+                            <mxPoint x="889" y="314"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wp-aurora" edge="1" parent="1" source="wp" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#576A79;fontSize=13;fontColor=#576A79;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="aurora" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
