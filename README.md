@@ -29,4 +29,3 @@ pnpm dev
 
 [Astro の開発ページ](http://localhost:4321/) を開きます。
 
-

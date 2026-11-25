@@ -143,7 +143,7 @@
                 <mxCell id="build-wp" edge="1" parent="1" source="build" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#167367;fontSize=13;fontColor=#167367;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="wp" value="Cloud Map の内部 DNS&lt;br&gt;REST API で公開記事を取得">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="build-site-s3" edge="1" parent="1" source="build" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#167367;fontSize=13;fontColor=#167367;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="site-s3" value="生成した dist/ を同期">
+                <mxCell id="build-site-s3" edge="1" parent="1" source="build" style="html=1;rounded=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#167367;fontSize=13;fontColor=#167367;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="site-s3" value="生成した dist/client/ を同期">
                     <mxGeometry relative="1" x="0.39" as="geometry">
                         <mxPoint x="-80" as="offset"/>
                         <Array as="points">
